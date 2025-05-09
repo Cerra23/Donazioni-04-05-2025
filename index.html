@@ -1,96 +1,83 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gusto di Speranza</title>
-    <!-- Link per caricare il font "EB Garamond" da Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'EB Garamond', serif; /* Imposta "EB Garamond" come font */
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* Sfondo nero */
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #fff; /* Testo bianco */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gusto di Speranza</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'EB Garamond', serif;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: center;
+    }
 
-        .logo-container img {
-            width: 90%; /* Immagine più grande, 90% della larghezza della pagina */
-            max-width: 1200px; /* Limite massimo di larghezza */
-            height: auto; /* L'altezza si adatta automaticamente alla larghezza */
-            margin-top: 20px; /* Spazio tra l'immagine e il bordo superiore */
-            margin-bottom: 0; /* Rimosso completamente lo spazio tra immagine e testo */
-            cursor: pointer; /* Aggiunto il cursore per indicare che è cliccabile */
-        }
+    .image-container {
+      max-width: 100%;
+      overflow: hidden;
+    }
 
-        .container {
-            width: 80%;
-            max-width: 800px;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-        }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 
-        p {
-            font-size: 1.3em; /* Testo con la dimensione originale */
-            line-height: 1.3; /* Interlinea a 1.3 */
-            color: #fff; /* Testo bianco */
-            margin-bottom: 20px; /* Spazio tra i paragrafi */
-        }
+    .content {
+      padding: 20px;
+      line-height: 1.6;
+      font-size: 1.2em;
+    }
 
-        .button-container {
-            margin-top: 40px; /* Spazio maggiore tra il testo e il bottone */
-        }
+    .donate-button {
+      display: inline-block;
+      margin: 40px auto 60px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
 
-        .donate-button {
-            background-color: #cda434; /* Colore oro per il bottone */
-            color: #fff; /* Testo bianco */
-            padding: 15px 30px;
-            font-size: 1.3em;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
+    .donate-button:hover {
+      background-color: #0056b3;
+    }
 
-        .donate-button:hover {
-            background-color: #b28a2e; /* Colore più scuro al passaggio del mouse */
-        }
-    </style>
+    @media (max-width: 600px) {
+      .content {
+        padding: 15px;
+        font-size: 1.1em;
+      }
+
+      .donate-button {
+        font-size: 1.1em;
+        padding: 10px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="image-container">
+    <a href="https://www.instagram.com/_cerra23_/" target="_blank">
+      <img src="https://i.imgur.com/HGagZkd.png" alt="Logo Gusto di Speranza" />
+    </a>
+  </div>
 
-    <div class="logo-container">
-        <!-- Immagine cliccabile che porta al link Instagram -->
-        <a href="https://www.instagram.com/_cerra23_/" target="_blank">
-            <img src="https://i.imgur.com/HGagZkd.png" alt="Logo Gusto di Speranza">
-        </a>
-    </div>
+  <div class="content">
+    <p>Sono Luca Cerrato, un ragazzo della Valle d’Aosta.</p>
+    <p>Nel mondo ci sono milioni di persone che non hanno nemmeno un pasto al giorno e allora io ho deciso di iniziare da un gesto semplice: condividere.</p>
+    <p>Il focus del progetto è promuovere la condivisione, intesa non solo come un gesto di solidarietà ma anche come un mezzo per sensibilizzare e ispirare gli altri a fare la loro parte. La condivisione è il filo conduttore di ogni contenuto che creo dal podcast ai video.</p>
+    <p>In particolare, il progetto vuole incoraggiare le persone a prendere consapevolezza di quanto la condivisione possa essere un potente strumento per affrontare temi come la fame nel mondo e lo spreco alimentare.</p>
+    <p>Ogni donazione serve a tenere viva questa missione e i fondi raccolti saranno destinati a donazioni a enti caritatevoli che combattono la fame nel mondo e lo spreco alimentare tutti i giorni.</p>
+  </div>
 
-    <div class="container">
-        <p>Sono Luca Cerrato, un ragazzo della Valle d’Aosta.<br>
-        Nel mondo ci sono milioni di persone che non hanno nemmeno un pasto al giorno,<br>
-        e allora io ho deciso di iniziare da un gesto semplice: condividere.</p>
-
-        <p>Il focus del progetto è promuovere la condivisione, intesa non solo come un gesto di solidarietà,<br>
-        ma anche come un mezzo per sensibilizzare e ispirare gli altri a fare la loro parte. La condivisione è il filo conduttore di ogni contenuto che creo dal podcast ai video.</p>
-
-        <p>In particolare, il progetto vuole incoraggiare le persone a prendere consapevolezza di quanto la condivisione possa essere un potente strumento per affrontare temi come la fame nel mondo e lo spreco alimentare.</p>
-
-        <p>Ogni donazione serve a tenere viva questa missione e i fondi raccolti saranno destinati a donazioni a enti caritatevoli che combattono la fame nel mondo e lo spreco alimentare tutti i giorni.</p>
-
-        <div class="button-container">
-            <a href="https://pay.sumup.com/b2c/QHGLQJWY" class="donate-button">Dona Ora</a>
-        </div>
-    </div>
-
+  <a class="donate-button" href="https://pay.sumup.com/b2c/QHGLQJWY" target="_blank">Dona Ora</a>
 </body>
 </html>
