@@ -15,10 +15,19 @@
       text-align: center;
     }
 
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .image-container {
       max-width: 100%;
       overflow: hidden;
       background-color: #000;
+      opacity: 0;
+      animation: fadeIn 1.2s ease-in-out forwards;
     }
 
     .image-container img {
@@ -32,6 +41,10 @@
       padding: 20px;
       line-height: 1.6;
       font-size: 1.2em;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s ease-in-out forwards;
+      animation-delay: 1.2s;
     }
 
     .donate-button {
@@ -44,11 +57,17 @@
       border: none;
       border-radius: 10px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s ease-in-out forwards;
+      animation-delay: 2.2s;
     }
 
     .donate-button:hover {
       background-color: #b8962f;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
     @media (max-width: 600px) {
