@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seleziona Metodo di Pagamento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Capriola', sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center; /* Aggiunto per centrare il testo */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusto di Speranza</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
 
-    h1 {
-      margin-bottom: 30px;
-      text-align: center; /* Garantisce che il testo sia centrato */
-      font-size: 30px; /* Puoi anche modificare la dimensione per renderlo più visibile su dispositivi mobili */
-    }
+        .logo-container {
+            width: 100%;
+            height: 300px; /* Imposta l'altezza dell'immagine */
+            background-image: url('https://i.imgur.com/vLH2qEp.png'); /* Usa il link dell'immagine */
+            background-size: cover;
+            background-position: center;
+        }
 
-    .payment-options {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
 
-    .payment-link {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background-color: #ffffff;
-      border: 2px solid #000000;
-      border-radius: 10px;
-      padding: 15px 25px;
-      text-decoration: none;
-      color: #000000;
-      font-size: 18px;
-      transition: 0.3s;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #006400;
+        }
 
-    .payment-link:hover {
-      background-color: #000000;
-      color: #ffffff;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            font-style: italic;
+            color: #444;
+            margin-bottom: 30px;
+        }
 
-    .payment-link img {
-      width: 24px;
-      height: 24px;
-    }
+        .button-container {
+            margin-top: 20px;
+        }
 
-    /* Media Query per dispositivi mobili */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
+        .donate-button {
+            background-color: #006400;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
 
-      .payment-link {
-        font-size: 16px;
-        padding: 12px 20px;
-      }
-
-      .payment-link img {
-        width: 20px;
-        height: 20px;
-      }
-
-      .payment-options {
-        gap: 15px;
-        padding: 0 10px;
-      }
-    }
-  </style>
+        .donate-button:hover {
+            background-color: #004d00;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Seleziona il tuo metodo di pagamento</h1>
+    <div class="logo-container"></div> <!-- Logo in cima che riempie la parte superiore -->
 
-  <div class="payment-options">
-    <a class="payment-link" href="https://www.paypal.com/pools/c/9e3H7xpTCc" target="_blank">
-      <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Logo PayPal">
-      PayPal
-    </a>
+    <div class="container">
+        <h1>Gusto di Speranza</h1>
+        <p>Sono Luca Cerrato, un ragazzo della Valle d’Aosta.<br>
+        Nel mondo ci sono milioni di persone che non hanno nemmeno un pasto al giorno,<br>
+        e allora io ho deciso di iniziare da un gesto semplice: condividere.</p>
 
-    <a class="payment-link" href="https://donate.stripe.com/dR600cgWJbKb0WAeUU" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/bank-card-back-side.png" alt="Logo Carta di Credito">
-      Carta di Credito
-    </a>
-  </div>
+        <p>Il focus del progetto è promuovere la condivisione, intesa non solo come un gesto di solidarietà,<br>
+        ma anche come un mezzo per sensibilizzare e ispirare gli altri a fare la loro parte. La condivisione è il filo conduttore di ogni contenuto che creo dal podcast ai video.</p>
+
+        <p>In particolare, il progetto vuole incoraggiare le persone a prendere consapevolezza di quanto la condivisione possa essere un potente strumento per affrontare temi come la fame nel mondo e lo spreco alimentare.</p>
+
+        <p>Ogni donazione serve a tenere viva questa missione e i fondi raccolti saranno destinati a donazioni a enti caritatevoli che combattono la fame nel mondo e lo spreco alimentare tutti i giorni.</p>
+
+        <div class="button-container">
+            <a href="https://pay.sumup.com/b2c/QHGLQJWY" class="donate-button">Dona Ora</a>
+        </div>
+    </div>
 
 </body>
 </html>
